@@ -6,10 +6,6 @@ $user = $_POST['user'];
 $mailboxType = $_POST['mailboxType'];
 $pwd = $_POST['pwd'];
 
-//$customer = 1213514;
-//$domain =  "raxrse.com";
-
-
 
 //Pull in functions file
 include 'functions.php';

@@ -5,11 +5,6 @@ $domain = $_POST['domain'];
 $mailboxType = $_POST['mailboxType'];
 $value = $_POST['value'];
 
-//$customerID = 1213514;
-//$domain =  "raxmex05.com";
-//$mailboxType = "rs";
-//$value = "true";
-
 //Pull in functions file
 include 'functions.php';
 //Require API Client file to pull functions 

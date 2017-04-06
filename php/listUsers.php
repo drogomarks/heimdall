@@ -4,10 +4,6 @@ $customerID = $_POST['id'];
 $domain = $_POST['domain'];
 $mailboxType = $_POST['mailboxType'];
 
-//$customer = 1213514;
-//$domain =  "raxrse.com";
-
-
 
 //Pull in functions file
 include 'functions.php';
