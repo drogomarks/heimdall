@@ -15,9 +15,9 @@
  */
 class ApiClient
 {
-    const USER_KEY = 'EDKO1rSMw/1ziRgF6n2/';
-    const SECRET_KEY = '/TODZuAHyKHYEmMqzS/iR9sP3bPwoeKdGVmJlGqo';
-    const USER_AGENT = 'daveDev';
+    const USER_KEY = 'YOUR_KEY';
+    const SECRET_KEY = 'YOUR_SECRET';
+    const USER_AGENT = 'youUserAgentHere';
 
     const VERSION = 'v1';
     const SERVER_HOST = 'api.emailsrvr.com';
