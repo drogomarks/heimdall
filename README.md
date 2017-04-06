@@ -12,6 +12,6 @@ I'm not a real developer, so if someting is broken please let me know. Also mobi
 * Create mobile optimized site
 * Log "Feature Requests" in MySQL database 
 * Put up a scripts page, with Pyton or Bash scripts that allow the constructing of calls via args
-
+* Write an install script (for Linux) for this application
 
 Send any feedback or hate to: rudy.marks@gmail.com
