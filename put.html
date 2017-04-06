@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Heimdall: Email & Apps API Tool</title>
+
+    <link rel="icon" href="images/favicon.ico" type="favicon" >   
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  </head>
+  
+
+<body>
+
+<!-- Navbar --> 
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="index.html"><img src="images/favicon.ico"></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="get.html">GET</a></li>
+        <li class="active"><a href="put.html">PUT<span class="sr-only">(current)</span></a></li>
+        <li><a href="post.html">POST</a></li>
+        <li><a href="delete.html">DELETE</a></li>
+     </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="request.html"><i class="fa fa-pencil"> </i> Feature Request</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--  END NAV BAR  -->
+
+<!-- MAIN CONTENT CONTAINER -->
+
+<div class="container theme-showcase" role="main">
+    <h1><strong>PUT</strong> Requests</h1>
+    <hr>
+
+    <!-- PUT  #1 --> 
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">  
+	            <i class="fa fa-plus"> </i> Set <code>visibleInExchangeGAL</code>to <code>true</code> or <code>false</code> for <strong>ALL</strong> users.
+  	       </a>
+            </h3>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse">
+        	<div class="panel-body">
+
+            	<form class="form-inline"  action="php/listUsers.php" method="post" target="_blank">
+
+
+                	<div class="form-group">
+                    	<label for="customerID">CustomerID:</label>
+                        <input type="text" class="form-control"  name="id" placeholder="123456789">
+             	   </div>
+
+                    <div class="form-group">
+                    	<label for="domain">Domain:</label>
+                        <input type="text" class="form-control" name="domain" placeholder="example.com">
+                   </div>
+
+
+                    <div class="form-group">
+                    	<label for="RSorEX">Value:</label>
+                        <select class="form-control" name="value">
+                        	<option>true</option>
+                        	<option>false</option>
+                        </select>
+                   </div>
+                   
+					<button type="submit" class="btn btn-primary">Make API Call</button>
+
+                </form>
+	     </div>
+        </div>
+    </div>
+
+<!-- END GET #1 -->
+
+
+    <!-- PUT  #2 -->
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                    <i class="fa fa-plus"> </i> Change User Password
+               </a>
+            </h3>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+
+                <form class="form-inline"  action="php/chgPass.php" method="post" target="_blank">
+
+
+                   <div class="form-group">
+                        <label for="customerID">CustomerID:</label>
+                        <input type="text" class="form-control"  name="id" placeholder="123456789">
+                   </div>
+
+                    <div class="form-group">
+                        <label for="domain">Domain:</label>
+                        <input type="text" class="form-control" name="domain" placeholder="example.com">
+                   </div>
+
+                    <div class="form-group">
+                        <label for="domain">User:</label>
+                        <input type="text" class="form-control" name="user" placeholder="mailbox username">
+                   </div>
+
+
+                    <div class="form-group">
+                        <label for="RSorEX">Type:</label>
+                        <select class="form-control" name="mailboxType">
+                                <option>ex</option>
+                                <option>rs</option>
+                        </select>
+                   </div>
+
+                    <div class="form-group">
+                        <label for="domain">Password:</label>
+                        <input type="text" class="form-control" name="pwd" placeholder="new password">
+                   </div>
+
+			
+                        <button type="submit" style="margin-top: 20px;" class="btn btn-primary">Make API Call</button>
+
+                </form>
+             </div>
+        </div>
+    </div>
+<!-- END GET #2 -->
+
+
+
+</div>
+
+
+    <footer class="footer">
+      <div class="containerIndex">
+        <p class="text-muted">&copy; Rudy "Drogo" Marks 2017</p>
+      </div>
+    </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>

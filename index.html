@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Heimdall: Email & Apps API Tool</title>
+
+    <link rel="icon" href="images/favicon.ico" type="favicon" >   
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  </head>
+  
+
+<!-- Navbar --> 
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="index.html"><img src="images/favicon.ico"></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="get.html">GET</a></li>
+        <li><a href="put.html">PUT</a></li>
+        <li><a href="post.html">POST</a></li>
+        <li><a href="delete.html">DELETE</a></li>
+     </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="request.html"><i class="fa fa-pencil"> </i> Feature Request</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--  END NAV BAR  -->
+<body>
+<!-- MAIN CONTENT CONTAINER -->
+<div class="container theme-showcase" role="main">
+
+    <h1 style="text-align: center"> <strong> Heimdall: Email & Apps API Tool </strong> </h1>
+    <hr>
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">What is Heimdall?</h3>
+  </div>
+  <div class="panel-body">
+    <p> Heimdall is simple web application that makes calls to the Rackspace Email & Apps API on your behalf. The idea is to be able to leverage the features of the API for complex or bulk tasks in a simple and easy manner for support.</p>
+           <p> The API Documention for which this follows can be found here: <a href="http://api-wiki.apps.rackspace.com"> http://api-wiki.apps.rackspace.com</a> </p>
+  </div>
+</div>
+
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title">Current Status</h3>
+  </div>
+  <div class="panel-body">
+               <p> The application is pretty much in alpha, needs a lot of work, mobile site is broken (although not sure if people would actually use this on mobile). These are the functions that can be performed currently:</p>
+
+           <p><strong>GET</strong></p>
+                <ul>
+                   <li> Get a list of all mailbox users (ex or rs) </li>
+                   <li> Get data about a specfic mailbox user (ex or rs) </li>
+                </ul>
+
+           <p><strong>PUT</strong></p>
+                <ul>
+                   <li> Set the value of <code>visibleInExchangeGAL</code> to <code>true</code> or <code>false</code> for <strong> ALL </strong> users. </li>
+                   <li> Change a users password (ex or rs) </li>
+                </ul>
+  </div>
+</div>
+
+
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">What's Next?</h3>
+  </div>
+  <div class="panel-body">
+    <p>The real driving force of this tool is going to be users. This is we have the <a href="request.html">Feature Request</a> page. To really make this something valuable, submit the things that would help make your job easier, no matter how off the wall it sounds or if you think it's not possible.</p>
+
+<p>Regarding feature Roadmap:</p>
+<p> - Currently when you make a call the output returns <code>JSON</code> in a new tab (and <code>XML</code> for a one). The plan is to actually inject the input into the same container, on the same page.</p>
+<p> - A seperate site optimized for mobile </p>
+<p> - A "call constructor" that would allow the user to choose the <code>HTTP_VERB</code><code> URL</code> and <code> VALUE(S)</code> and make a desired call to the API. </p>
+<p class="lead"> tl;dr we need YOUR feedback! </p>
+  </div>
+</div>
+
+
+    <footer class="footer">
+      <div class="containerIndex">
+        <p class="text-muted">&copy; Rudy "Drogo" Marks 2017</p>
+      </div>
+    </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
