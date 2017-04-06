@@ -11,5 +11,7 @@ I'm not a real developer, so if someting is broken please let me know. Also mobi
 * Write JS to put output into same page and container where the call is made, rather than a new tab
 * Create mobile optimized site
 * Log "Feature Requests" in MySQL database 
+* Put up a scripts page, with Pyton or Bash scripts that allow the constructing of calls via args
+
 
 Send any feedback or hate to: rudy.marks@gmail.com
