@@ -2,7 +2,6 @@
 
 $customerID = $_POST['id'];
 $domain = $_POST['domain'];
-$mailboxType = $_POST['mailboxType'];
 $value = $_POST['value'];
 
 //Pull in functions file
@@ -16,7 +15,7 @@ $client = new  ApiClient();
 
 //Send GET Request to API and store response in $response
 $GET = $client->get(
-    "/customers/$customerID/domains/$domain/$mailboxType/mailboxes?size=500",
+    "/customers/$customerID/domains/$domain/rs/mailboxes",
     "application/json");
 //Pretty print the JSON response
 $GET = prettyPrint($GET);
